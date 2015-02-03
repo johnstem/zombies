@@ -1,0 +1,78 @@
+#container{
+	width: 820px;
+	height: 600px;
+	display:block;
+	margin-left: auto; 
+	margin-right: auto;
+}
+
+#startscreen{
+	
+	 
+	 width: 820px; 
+	 height: 600px;
+	 background-color: gray;
+	 position:absolute;
+	z-index: 2;
+}
+
+#startscreen p{
+
+	text-align: center;
+	font-size: 200%;
+	line-height: 85%;
+}
+
+#startscreen div{
+
+	width: 75px;
+	height: 75px;
+	margin: 0 auto;
+	
+
+}
+
+#myCanvas{
+
+	
+	margin-left: auto; 
+	margin-right: auto; 	
+	display: block;
+	border: 1px solid black;
+	
+
+}
+
+img{
+	margin: 5px 5px 5px 5px;
+	border: 2px solid black;
+	background-color: gray;
+
+}
+
+#healthcontainer{
+	 width:400px;
+	 height: 50px;
+	margin-left: 25px;
+	display: inline-block;
+	border: 2px solid red;
+	
+
+}
+
+#healthbar{
+	 width:400px;
+	 height: 50px;
+	display: inline-block;
+	background-color: red;
+	
+
+}
+
+#healthbar p{
+	position: absolute;
+	text-align: center;
+	line-height: 50%;
+	font-size: 150%;
+	
+}
