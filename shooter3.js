@@ -1,18 +1,4 @@
 
-// canvas dimensions don't seem to set properly when width and height are defined using css
-// it somehow changes the positions of all objects to be relative to the default size (300x150?)
-// need to set the width and height in the html
-// drawing background with create pattern and with nested loops seems to cause extreme lag
-
-// there is a limit to how many anon functions can be put on the stack over each loop
-// when assigning object methods using anonymous functions this can quickly become an issue
-	// these functions have been taken out of the object methods
-	
-// STROKE METHOD KEEPS TRACK OF THE ENTIRE PATH
-	// every call to rect, lineto etc adds to the path, you need to explicitly tell it to start over with beginPath
-	// in a game loop the stroke method will start to lag as the path becomes longer over each iteration
-	// strokerect automatically starts and ends the path.
-
 
 //(function(){
 
@@ -142,19 +128,19 @@
 	};
 	
 	var pistolimage = new Image();
-	pistolimage.src = 'images/Pistol.png';
+	pistolimage.src = "images/Pistol.png";
 	pistolimage.onload = function(){
 		imageLoader += 1;
 	};
 	
 	var shotgunimage = new Image();
-	shotgunimage.src = 'images/Shotgun.png';
+	shotgunimage.src = "images/Shotgun.png";
 	shotgunimage.onload = function(){
 		imageLoader += 1;
 	};
 	
 	var assaultimage = new Image();
-	assaultimage.src = 'images/Assault.png';
+	assaultimage.src = "images/Assault.png";
 	assaultimage.onload = function(){
 		imageLoader += 1;
 	};
